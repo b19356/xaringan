@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    color: #2c3e50;
+}
+
+/* TITLE / TRANSITIONS */
+.title_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+}
+
+.logo {
+    background-image: url("img/logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0.5em;
+    left: 1em;
+    width: 152px;
+    height: 63px;
+    opacity: 0.6;
+}
+
+/* Adjust slide number to align with logo */
+
+div.remark-slide-number {
+    bottom: 25px;
+}
+
+/* IMAGES */
+
+img {
+    max-width: 100%;
+}
+
+/* CALLOUTS */
+
+.callout {
+    box-shadow: 3px 3px 3px 3px rgba(44, 62, 80, 0.5);
+    border-radius: 20px;
+    background-color: #ffffcc;
+    color: rgba(44, 62, 80, 1);
+    padding: 0.5em;
+}
+
+/* ICONS */
+
+i {
+    color: rgba(44, 62, 80, 1);
+}
+
+/* Example icon for <i id="arrow" class="fas fa-arrow-down fa-2x"></i> */
+
+#arrow {
+    position: absolute;
+    bottom: 20%;
+    left: 25%;
+    transform: rotate(-20deg);
+}
+
+/* LISTS */
+
+li {
+    padding: 0.5em;
+}
+
+/* TABLE - GENERAL */
+
+table {
+    border-spacing: 0;
+}
+
+td {
+    padding: 0.5em;
+    font-size: 0.7em;
+}
+
+th {
+    border-bottom: 1.5px solid #ddd;
+}
+
+/* Bootstrap look */
+
+tbody tr:nth-of-type(even) {
+    background-color: #f5f5f5;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+}
+
+/* TABLE - SPECIFIC - some examples */
+
+tr td:nth-child(3), tr th:nth-child(3), tr td:nth-child(4), tr th:nth-child(4),  tr td:nth-child(5), tr th:nth-child(5){
+    text-align: center;
+}
+
+table.acs thead tr th:nth-child(1), table.acs tbody tr td:nth-child(1) {
+    width: 30%;
+}
+
+table.acs thead tr th:nth-child(2), table.acs tbody tr td:nth-child(2) {
+    width: 30%;
+}
+
+table.acs thead tr th:nth-child(3), table.acs tbody tr td:nth-child(3) {
+    width: 20%;
+}
+
+table.acs thead tr th:nth-child(4), table.acs tbody tr td:nth-child(4) {
+    width: 10%;
+}
+
+table.acs thead tr th:nth-child(5), table.acs tbody tr td:nth-child(5) {
+    width: 10%;
+}
+
+/* table class to set caption under table.  caption tag must go right after table, but you can position */
+
+.pretty {
+    caption-side: bottom;
+    margin: 0 auto 0 auto;
+}
+
+caption {
+    font-size: 0.6em;
+    text-align: left;
+    padding-top: 0.1em;
+    font-style: italic;
+}
+
+.pink {
+
+    color: pink !important;
+}

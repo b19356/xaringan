@@ -1,0 +1,28 @@
+//Inspiration: https://www.garrickadenbuie.com/blog/xaringan-tip-logo-all-slides/
+
+<script>
+    
+//Add or subtract more classes if necessary
+
+    let my_array = document.querySelectorAll(".remark-slide-content" + ":not(.title)")
+    
+    let my_length = my_array.length;
+    
+    for (let i=0; i < my_length; i++) {
+        
+        my_array[i].innerHTML += "<div class='logo'></div>";
+    }
+
+    const div = document.getElementById("add_stuff");
+
+    const button = document.querySelector("button");
+
+    button.addEventListener("click", function() {
+
+        div.innerHTML = "What's Up?"
+
+    })
+
+</script>
+
+
